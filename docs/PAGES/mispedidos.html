@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONEMARKET</title>
+
+    <link rel="stylesheet" href="../STYLES/estilomp.css">
+</head>
+
+<body>
+    
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">ONEMARKET</div> 
+    </header>
+
+    <!-- HISTORIAL -->
+    <section class="historial">
+
+        <h2>Historial de Compras</h2>
+
+        <!-- FILTRO -->
+        <div class="filtro-box">
+            <p class="titulo">Filtrar por Rango de Fechas</p>
+
+            <div class="filtro-grid">
+                <div>
+                    <label>Fecha de Inicio</label>
+                    <input type="text" placeholder="dd/mm/aaaa">
+                </div>
+
+                <div>
+                    <label>Fecha de Fin</label>
+                    <input type="text" placeholder="dd/mm/aaaa">
+                </div>
+            </div>
+        </div>
+
+        <p class="sub">Mostrando últimas compras</p>
+
+        <!-- COMPRA 1 -->
+        <div class="compra-card">
+
+            <div class="compra-header">
+                <h3>Compra 1</h3>
+                <span class="estado verde">estado</span>
+                <span class="total-label">Total</span>
+            </div>
+
+            <div class="compra-body">
+                <div class="info">
+                    <p>id de compra :</p>
+                    <p>fecha : dd/mm/aaaa</p>
+                    <p>cantidad de productos :</p>
+                </div>
+
+                <div class="precio">$$$$</div>
+            </div>
+
+        </div>
+
+        <!-- COMPRA 2 -->
+        <div class="compra-card">
+
+            <div class="compra-header">
+                <h3>Compra 2</h3>
+                <span class="estado morado">estado</span>
+                <span class="total-label">Total</span>
+            </div>
+
+            <div class="compra-body">
+                <div class="info">
+                    <p>id de compra :</p>
+                    <p>fecha : dd/mm/aaaa</p>
+                    <p>cantidad de productos :</p>
+                </div>
+
+                <div class="precio">$$$$</div>
+            </div> <!-- 👈 ESTE TE FALTABA -->
+
+        </div>
+
+    </section>
+
+</body>
+</html>

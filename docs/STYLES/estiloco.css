@@ -1,0 +1,246 @@
+/* VARIABLES */
+:root {
+    --primary: #111;
+    --secondary: #6b6b6b;
+    --bg: #f5f5f5;
+    --white: #fff;
+    --border: #eaeaea;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: var(--bg);
+    color: var(--primary);
+}
+
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 8px;
+}
+
+.logo img {
+    width: 30px;
+}
+
+
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart {
+    font-size: 20px;
+}
+
+
+/* Boton perfil */
+
+.perfil {
+    background: linear-gradient(135deg, #f7f7f7, #fdfdfd);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* ========================= */
+/* CARRITO VACÍO 🔥 */
+/* ========================= */
+
+.vacio {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+/* ICONO */
+.avatar {
+    width: 110px;
+    height: 110px;
+    background: #e0e0e0;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 45px; /* tamaño del emoji 🛒 */
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    margin-bottom: 15px;
+}
+
+/* TITULO */
+.vacio h1 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+/* TEXTO */
+.vacio p {
+    font-size: 15px;
+    color: var(--secondary);
+}
+
+/* BOTON */
+.explorar_productos {
+    margin-top: 10px;
+    padding: 10px 25px;
+    border: 1px solid var(--primary);
+    background: var(--white);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* HOVER 🔥 */
+.explorar_productos:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+.footer {
+    background: #111;
+    color: #fff;
+    padding: 40px 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* IZQUIERDA */
+.footer-left {
+    max-width: 300px;
+}
+
+.footer-logo {
+    margin-bottom: 10px;
+}
+
+/* LINKS */
+.footer-link {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-link h4 {
+    margin-bottom: 10px;
+}
+
+.footer-link a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-link a:hover {
+    color: #fff;
+}
+
+/* SOCIAL */
+.footer-social h4 {
+    margin-bottom: 10px;
+}
+
+.icons span {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* ========================= */
+/* RESPONSIVE MOBILE CON AYUDA DE IA */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    /* CONTENEDOR */
+    .historial {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* FILTRO */
+    .filtro-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* CARDS */
+    .compra-body {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .precio {
+        align-self: flex-end;
+        font-size: 16px;
+    }
+
+    /* TEXTO */
+    .info p {
+        font-size: 13px;
+    }
+
+    .sub {
+        font-size: 12px;
+    }
+
+    /* CARDS MÁS COMPACTAS */
+    .compra-card {
+        padding: 15px;
+    }
+
+}

@@ -1,0 +1,324 @@
+:root {
+    --primary: #111;
+    --secondary: #6b6b6b;
+    --bg: #f7f7f7;
+    --white: #ffffff;
+    --border: #eaeaea;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: var(--bg);
+    color: var(--primary);
+}
+
+
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* BUSCADOR */
+.search {
+    width: 300px;
+    padding: 10px 18px;
+    border-radius: 30px;
+    border: none;
+    background: #f0f0f0;
+    transition: 0.3s;
+}
+
+.search:focus {
+    outline: none;
+    background: #e6e6e6;
+}
+
+/* ACCIONES NAV */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Boton perfil */
+
+.Perfil {
+    background: linear-gradient(135deg, #f7f7f7, #fdfdfd);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Hover (cuando pasas el mouse) */
+.Perfil:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Click */
+.Perfil:active {
+    transform: scale(0.95);
+}
+
+/* Opcional: efecto borde al enfocar */
+.Perfil:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 242, 254, 0.5);
+}
+
+.Explorar {
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+.Explorar-header h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.Explorar-header p {
+    font-size: 14px;
+    color: #555;
+}
+
+.producto {
+    padding: 40px;
+    background: #f5f5f5;
+}
+
+.producto-contenedor {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+/* IMAGEN */
+.producto-img img {
+    width: 300px;
+    border-radius: 10px;
+    background: #ccc;
+}
+
+/* INFO */
+.producto-info {
+    max-width: 400px;
+}
+
+.categoria {
+    display: inline-block;
+    background: #ddd;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.producto-info h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.rating {
+    color: gold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.descripcion h4 {
+    margin-bottom: 5px;
+}
+
+.descripcion p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* BOTON */
+.btn-carrito {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-carrito:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* LINEA */
+hr {
+    margin-top: 30px;
+    border: 1px solid #000;
+}
+
+/* CONTENEDOR */
+.relacionados {
+    padding: 40px 60px; /* espacio a los lados */
+}
+
+.relacionados h3 {
+    font-size: 25px;
+    margin-bottom: 25px;
+    margin-left: 5px; /* pequeño ajuste visual */
+}
+
+
+
+.relacionados-contenedor {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* CARD PEQUEÑA */
+
+.relacionados-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.relacionados-contenedor .card {
+    width: 160px; /* más pequeña */
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* IMAGEN */
+.relacionados-contenedor .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* TITULO */
+.relacionados-contenedor .card h3 {
+    font-size: 14px;
+    margin: 8px 0 4px;
+}
+
+/* PRECIO */
+.relacionados-contenedor .card p {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* CATEGORIA */
+.relacionados-contenedor .card .brand {
+    font-size: 11px;
+    color: #555;
+}
+
+/* BOTON */
+.relacionados-contenedor .card button {
+    margin-top: 8px;
+    width: 100%;
+    padding: 6px;
+    font-size: 12px;
+    border: 1px solid #000;
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* HOVER 🔥 */
+.relacionados-contenedor .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ========================= */
+/* RESPONSIVE MOBILE CON AYUDA DE IA */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    /* CONTENEDOR */
+    .historial {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* FILTRO */
+    .filtro-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* CARDS */
+    .compra-body {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .precio {
+        align-self: flex-end;
+        font-size: 16px;
+    }
+
+    /* TEXTO */
+    .info p {
+        font-size: 13px;
+    }
+
+    .sub {
+        font-size: 12px;
+    }
+
+    /* CARDS MÁS COMPACTAS */
+    .compra-card {
+        padding: 15px;
+    }
+
+}

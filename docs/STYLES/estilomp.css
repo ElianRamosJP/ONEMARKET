@@ -1,0 +1,203 @@
+:root {
+    --primary: #111;
+    --secondary: #6b6b6b;
+    --bg: #f7f7f7;
+    --white: #ffffff;
+    --border: #eaeaea;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: var(--bg);
+    color: var(--primary);
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* CONTENEDOR */
+.historial {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.historial h2 {
+    margin-bottom: 20px;
+}
+
+/* ========================= */
+/* FILTRO */
+/* ========================= */
+
+.filtro-box {
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+.titulo {
+    margin-bottom: 15px;
+}
+
+.filtro-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.filtro-grid div {
+    flex: 1;
+}
+
+.filtro-grid label {
+    font-size: 14px;
+}
+
+.filtro-grid input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 20px;
+    border: 2px solid #000;
+    outline: none;
+}
+
+/* SUB */
+.sub {
+    margin: 15px 0;
+}
+
+/* ========================= */
+/* CARD COMPRA */
+/* ========================= */
+
+.compra-card {
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+/* HEADER */
+.compra-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.compra-header h3 {
+    margin-right: 10px;
+}
+
+/* ESTADO */
+.estado {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.verde {
+    background: #39ff14;
+}
+
+.morado {
+    background: #6c4cff;
+    color: #fff;
+}
+
+/* TOTAL LABEL */
+.total-label {
+    margin-left: auto;
+    font-weight: bold;
+}
+
+/* BODY */
+.compra-body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* INFO */
+.info p {
+    margin-bottom: 8px;
+}
+
+/* PRECIO */
+.precio {
+    font-weight: bold;
+    font-size: 18px;
+    align-self: center;
+}
+
+/* ========================= */
+/* RESPONSIVE MOBILE CON AYUDA DE IA */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    /* CONTENEDOR */
+    .historial {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* FILTRO */
+    .filtro-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* CARDS */
+    .compra-body {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .precio {
+        align-self: flex-end;
+        font-size: 16px;
+    }
+
+    /* TEXTO */
+    .info p {
+        font-size: 13px;
+    }
+
+    .sub {
+        font-size: 12px;
+    }
+
+    /* CARDS MÁS COMPACTAS */
+    .compra-card {
+        padding: 15px;
+    }
+
+}

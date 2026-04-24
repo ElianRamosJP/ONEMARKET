@@ -1,0 +1,391 @@
+:root {
+    --primary: #111;
+    --secondary: #6b6b6b;
+    --bg: #f7f7f7;
+    --white: #ffffff;
+    --border: #eaeaea;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: var(--bg);
+    color: var(--primary);
+}
+
+
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* BUSCADOR */
+.search {
+    width: 300px;
+    padding: 10px 18px;
+    border-radius: 30px;
+    border: none;
+    background: #f0f0f0;
+    transition: 0.3s;
+}
+
+.search:focus {
+    outline: none;
+    background: #e6e6e6;
+}
+
+/* Boton perfil */
+
+.Perfil {
+    background: linear-gradient(135deg, #f7f7f7, #fdfdfd);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Hover (cuando pasas el mouse) */
+.Perfil:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Click */
+.Perfil:active {
+    transform: scale(0.95);
+}
+
+/* Opcional: efecto borde al enfocar */
+.Perfil:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 242, 254, 0.5);
+}
+/* ACCIONES NAV */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* CARTS */
+
+a {
+    text-decoration: none; /* quita el subrayado */
+    color: inherit; /* usa el color del padre */
+}
+
+.card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card:link,
+.card:visited,
+.card:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.cart {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.login {
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid var(--primary);
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.Explorar {
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+.Explorar-header h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.Explorar-header p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+/* FILTROS */
+.filters {
+    border: 2px solid #111;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    background: #fff;
+}
+
+.filters .label {
+    font-weight: 600;
+}
+
+.filters button {
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* EFECTO UNDERLINE PRO */
+.filters button::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: black;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+
+.filters button:hover::after {
+    width: 100%;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+}
+
+/* CARD */
+.card {
+    background: var(--white);
+    padding: 18px;
+    border-radius: 15px;
+    border: 1px solid var(--border);
+    transition: 0.4s;
+    text-align: center;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+/* IMAGEN */
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    background: #eee;
+}
+
+/* TEXTO */
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.brand {
+    font-size: 12px;
+    color: var(--secondary);
+}
+
+/* BOTON CARD */
+.card button {
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background: var(--primary);
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background: #333;
+}
+
+/* FOOTER */
+.footer {
+    background: #fff;
+    border-top: 1px solid #eaeaea;
+    padding: 40px 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* IZQUIERDA */
+.footer-left {
+    max-width: 300px;
+}
+
+.footer-logo {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    color: #6b6b6b;
+}
+
+/* LINKS */
+.footer-links {
+    display: flex;
+    gap: 60px;
+}
+
+.footer-links h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    display: block;
+    text-decoration: none;
+    color: #6b6b6b;
+    font-size: 14px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #111;
+}
+
+/* SOCIAL */
+.footer-social h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icons span {
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icons span:hover {
+    transform: scale(1.2);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-links {
+        gap: 30px;
+    }
+}
+
+/* ========================= */
+/* RESPONSIVE MOBILE CON AYUDA DE IA */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    /* CONTENEDOR */
+    .historial {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* FILTRO */
+    .filtro-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* CARDS */
+    .compra-body {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .precio {
+        align-self: flex-end;
+        font-size: 16px;
+    }
+
+    /* TEXTO */
+    .info p {
+        font-size: 13px;
+    }
+
+    .sub {
+        font-size: 12px;
+    }
+
+    /* CARDS MÁS COMPACTAS */
+    .compra-card {
+        padding: 15px;
+    }
+
+}

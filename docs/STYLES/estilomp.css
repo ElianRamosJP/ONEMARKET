@@ -1,203 +1,258 @@
 :root {
-    --primary: #111;
-    --secondary: #6b6b6b;
-    --bg: #f7f7f7;
-    --white: #ffffff;
-    --border: #eaeaea;
+
+    --primary:#111;
+    --secondary:#666;
+    --bg:#f5f5f5;
+    --white:#fff;
+    --border:#eaeaea;
+
 }
 
 /* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 /* BODY */
-body {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: var(--bg);
-    color: var(--primary);
+
+body{
+
+    font-family:'Segoe UI',sans-serif;
+
+    background:var(--bg);
+
+    color:var(--primary);
+
 }
 
 /* NAVBAR */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 60px;
-    background: var(--white);
-    border-bottom: 1px solid var(--border);
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 60px;
+
+    background:var(--white);
+
+    border-bottom:1px solid var(--border);
+
 }
 
-.logo {
-    font-weight: 700;
-    letter-spacing: 1px;
+.logo{
+
+    font-weight:700;
+
+    cursor:pointer;
+
 }
 
 /* CONTENEDOR */
-.historial {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 0 20px;
+
+.historial{
+
+    max-width:900px;
+
+    margin:30px auto;
+
+    padding:20px;
+
 }
 
-.historial h2 {
-    margin-bottom: 20px;
-}
-
-/* ========================= */
 /* FILTRO */
-/* ========================= */
 
-.filtro-box {
-    border: 2px solid #000;
-    border-radius: 15px;
-    padding: 20px;
-    margin-bottom: 20px;
-    background: #fff;
+.filtro-box{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    margin:20px 0;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.05);
+
 }
 
-.titulo {
-    margin-bottom: 15px;
+.filtro-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+    margin-top:15px;
+
 }
 
-.filtro-grid {
-    display: flex;
-    gap: 20px;
+.filtro-grid input{
+
+    width:100%;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    border:1px solid #ccc;
+
 }
 
-.filtro-grid div {
-    flex: 1;
-}
+.btn-filtrar{
 
-.filtro-grid label {
-    font-size: 14px;
-}
+    margin-top:20px;
 
-.filtro-grid input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 20px;
-    border: 2px solid #000;
-    outline: none;
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#111;
+
+    color:white;
+
+    cursor:pointer;
+
 }
 
 /* SUB */
-.sub {
-    margin: 15px 0;
+
+.sub{
+
+    margin:20px 0;
+
+    color:#666;
+
 }
 
-/* ========================= */
-/* CARD COMPRA */
-/* ========================= */
+/* CARD */
 
-.compra-card {
-    border: 2px solid #000;
-    border-radius: 15px;
-    padding: 20px;
-    margin-bottom: 20px;
-    background: #fff;
+.compra-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    margin-bottom:20px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.05);
+
 }
 
 /* HEADER */
-.compra-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+
+.compra-header{
+
+    display:flex;
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:20px;
+
 }
 
-.compra-header h3 {
-    margin-right: 10px;
+.estado{
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    color:white;
+
 }
 
-/* ESTADO */
-.estado {
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 12px;
+.verde{
+
+    background:green;
+
 }
 
-.verde {
-    background: #39ff14;
-}
+.total-label{
 
-.morado {
-    background: #6c4cff;
-    color: #fff;
-}
+    margin-left:auto;
 
-/* TOTAL LABEL */
-.total-label {
-    margin-left: auto;
-    font-weight: bold;
+    font-weight:bold;
+
 }
 
 /* BODY */
-.compra-body {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
+
+.compra-body{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
 }
 
-/* INFO */
-.info p {
-    margin-bottom: 8px;
+.info p{
+
+    margin-bottom:8px;
+
 }
 
 /* PRECIO */
-.precio {
-    font-weight: bold;
-    font-size: 18px;
-    align-self: center;
+
+.precio{
+
+    font-size:22px;
+
+    font-weight:bold;
+
 }
 
-/* ========================= */
-/* RESPONSIVE MOBILE CON AYUDA DE IA */
-/* ========================= */
+/* SIN PEDIDOS */
 
-@media (max-width: 768px) {
+.sin-pedidos{
 
-    /* CONTENEDOR */
-    .historial {
-        padding: 20px;
+    text-align:center;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .navbar{
+
+        padding:20px;
+
     }
 
-    h2 {
-        font-size: 20px;
-        text-align: center;
+    .filtro-grid{
+
+        grid-template-columns:1fr;
+
     }
 
-    /* FILTRO */
-    .filtro-grid {
-        flex-direction: column;
-        gap: 15px;
-    }
+    .compra-body{
 
-    /* CARDS */
-    .compra-body {
-        flex-direction: column;
-        gap: 10px;
-    }
+        flex-direction:column;
 
-    .precio {
-        align-self: flex-end;
-        font-size: 16px;
-    }
+        align-items:flex-start;
 
-    /* TEXTO */
-    .info p {
-        font-size: 13px;
-    }
+        gap:15px;
 
-    .sub {
-        font-size: 12px;
-    }
-
-    /* CARDS MÁS COMPACTAS */
-    .compra-card {
-        padding: 15px;
     }
 
 }

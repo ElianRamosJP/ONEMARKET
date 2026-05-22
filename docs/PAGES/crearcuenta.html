@@ -1,106 +1,229 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONEMARKET</title>
-    <!--LINK DE STILOS-->
-    <link rel="stylesheet" href="../STYLES/estilocc.css">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Crear Cuenta | ONEMARKET</title>
+
+    <link rel="stylesheet"
+    href="../STYLES/estilocc.css">
+
 </head>
+
 <body>
 
+    <!-- NAVBAR -->
     <header class="navbar">
-      <div class="logo">ONEMARKET </div> 
-    </header>
 
-    <section class="registro">
-
-        <div class="registro-header">
-          <h2>Crear Cuenta</h2>
-          <p>Únete a ONEMARKET hoy</p>
+        <div class="logo">
+            ONEMARKET
         </div>
 
-        <div class="registro-box">
+    </header>
 
-          <h3>Registro de Usuario</h3>
-          <p class="sub">Completa el formulario para crear tu cuenta</p>
+    <!-- REGISTRO -->
+    <section class="registro">
 
-            <!-- INFO CUENTA -->
-           <h4>Información de Cuenta</h4>
+        <!-- HEADER -->
+        <div class="registro-header">
 
-            <div class="grid-2">
-                <div>
-                  <label>EMAIL *</label>
-                  <input type="email">
-                </div>
+            <h2>
+                Crear Cuenta
+            </h2>
 
-                <div>
-                  <label>USUARIO *</label>
-                  <input type="text">
-                </div>
-            </div>
-
-            <div class="grid-1">
-              <label>CONTRASEÑA *</label>
-              <input type="password">
-            </div>
-
-            <!-- INFO PERSONAL -->
-            <h4>Información Personal</h4>
-
-            <div class="grid-2">
-                <div>
-                   <label>NOMBRE *</label>
-                   <input type="text">
-                </div>
-
-                <div>
-                   <label>APELLIDOS *</label>
-                   <input type="text">
-                </div>
-            </div>
-
-            <div class="grid-1">
-              <label>TELEFONO *</label>
-              <input type="text">
-            </div>
-
-           <!-- DIRECCIÓN -->
-           <h4>Dirección</h4>
-
-           <div class="grid-2">
-               <div>
-                   <label>CALLE *</label>
-                   <input type="text">
-                </div>
-
-                <div>
-                  <label>NUMERO *</label>
-                  <input type="text">
-                </div>
-            </div>
-
-            <div class="grid-2">
-                <div>
-                  <label>CIUDAD *</label>
-                  <input type="text">
-                </div>
-
-                <div>
-                  <label>CODIGO POSTAL *</label>
-                  <input type="text">
-                </div>
-            </div>
-
-           <button class="btn-registro">Registrarse</button>
-
-            <p class="login-link">
-               ¿Ya tienes cuenta? <a href="../PAGES/LOGIN.HTML">Inicia sesión aquí</a>
+            <p>
+                Únete a ONEMARKET hoy
             </p>
 
         </div>
 
+        <!-- FORM -->
+        <form class="registro-box"
+        id="formRegistro">
+
+            <h3>
+                Registro de Usuario
+            </h3>
+
+            <p class="sub">
+                Completa el formulario para crear tu cuenta
+            </p>
+
+            <!-- CUENTA -->
+            <h4>
+                Información de Cuenta
+            </h4>
+
+            <div class="grid-2">
+
+                <div>
+
+                    <label>Email *</label>
+
+                    <input
+                    type="email"
+                    id="email"
+                    required>
+
+                </div>
+
+                <div>
+
+                    <label>Usuario *</label>
+
+                    <input
+                    type="text"
+                    id="username"
+                    required>
+
+                </div>
+
+            </div>
+
+            <div class="grid-1">
+
+                <label>Contraseña *</label>
+
+                <input
+                type="password"
+                id="password"
+                required>
+
+            </div>
+
+            <!-- PERSONAL -->
+            <h4>
+                Información Personal
+            </h4>
+
+            <div class="grid-2">
+
+                <div>
+
+                    <label>Nombre *</label>
+
+                    <input
+                    type="text"
+                    id="firstname"
+                    required>
+
+                </div>
+
+                <div>
+
+                    <label>Apellido *</label>
+
+                    <input
+                    type="text"
+                    id="lastname"
+                    required>
+
+                </div>
+
+            </div>
+
+            <div class="grid-1">
+
+                <label>Teléfono *</label>
+
+                <input
+                type="text"
+                id="phone"
+                required>
+
+            </div>
+
+            <!-- DIRECCION -->
+            <h4>
+                Dirección
+            </h4>
+
+            <div class="grid-2">
+
+                <div>
+
+                    <label>Calle *</label>
+
+                    <input
+                    type="text"
+                    id="street"
+                    required>
+
+                </div>
+
+                <div>
+
+                    <label>Número *</label>
+
+                    <input
+                    type="text"
+                    id="number"
+                    required>
+
+                </div>
+
+            </div>
+
+            <div class="grid-2">
+
+                <div>
+
+                    <label>Ciudad *</label>
+
+                    <input
+                    type="text"
+                    id="city"
+                    required>
+
+                </div>
+
+                <div>
+
+                    <label>Código Postal *</label>
+
+                    <input
+                    type="text"
+                    id="zipcode"
+                    required>
+
+                </div>
+
+            </div>
+
+            <!-- BOTON -->
+            <button
+            type="submit"
+            class="btn-registro">
+
+                Registrarse
+
+            </button>
+
+            <!-- LOGIN -->
+            <p class="login-link">
+
+                ¿Ya tienes cuenta?
+
+                <a href="../PAGES/login.html">
+
+                    Inicia sesión aquí
+
+                </a>
+
+            </p>
+
+        </form>
+
     </section>
-    
+
+    <!-- JS -->
+    <script src="../SCRIPTS/registro.js"></script>
+
 </body>
+
 </html>

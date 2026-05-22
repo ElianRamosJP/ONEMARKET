@@ -1,200 +1,246 @@
-:root {
-    --primary: #111;
-    --secondary: #6b6b6b;
-    --bg: #f7f7f7;
-    --white: #ffffff;
-    --border: #eaeaea;
+:root{
+
+    --primary:#111;
+    --secondary:#777;
+    --bg:#f7f7f7;
+    --white:#fff;
+    --border:#eaeaea;
+
 }
 
 /* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
 }
 
-/* BODY */
-body {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: var(--bg);
-    color: var(--primary);
+body{
+
+    font-family:'Segoe UI', sans-serif;
+
+    background:var(--bg);
+
+    color:var(--primary);
+
 }
 
 /* NAVBAR */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 60px;
-    background: var(--white);
-    border-bottom: 1px solid var(--border);
+
+.navbar{
+
+    padding:20px 60px;
+
+    background:var(--white);
+
+    border-bottom:1px solid var(--border);
+
 }
 
-.logo {
-    font-weight: 700;
-    letter-spacing: 1px;
+.logo{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
 }
 
 /* LOGIN */
-.login {
-    text-align: center;
-    padding: 50px 20px;
+
+.login{
+
+    min-height:90vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+
 }
 
 /* HEADER */
-.login-header img {
-    width: 65px;
-    margin-bottom: 10px;
+
+.login-header{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
 }
 
-.login-header h2 {
-    font-size: 22px;
-    margin-bottom: 5px;
+.login-header img{
+
+    width:80px;
+
+    margin-bottom:10px;
+
 }
 
-.login-header p {
-    font-size: 13px;
-    color: var(--secondary);
+.login-header h2{
+
+    margin-bottom:8px;
+
 }
 
-/* CAJA */
-.login-box {
-    margin: 40px auto;
-    width: 450px;
-    padding: 35px;
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    background: var(--white);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-    transition: 0.3s;
+.login-header p{
+
+    color:var(--secondary);
+
 }
 
-/* pequeño efecto */
-.login-box:hover {
-    transform: translateY(-3px);
+/* BOX */
+
+.login-box{
+
+    width:100%;
+    max-width:420px;
+
+    background:var(--white);
+
+    padding:35px;
+
+    border-radius:18px;
+
+    border:1px solid var(--border);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.05);
+
 }
 
 /* TITULOS */
-.login-box h3 {
-    margin-bottom: 5px;
+
+.login-box h3{
+
+    margin-bottom:5px;
+
 }
 
-.login-box .sub {
-    font-size: 12px;
-    color: var(--secondary);
-    margin-bottom: 20px;
+.sub{
+
+    color:var(--secondary);
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
 }
 
-/* INPUTS */
-.login-box label {
-    display: block;
-    margin: 15px 0 5px;
-    font-weight: 600;
-    font-size: 14px;
+/* LABEL */
+
+.login-box label{
+
+    display:block;
+
+    margin-bottom:8px;
+    margin-top:18px;
+
+    font-size:14px;
+
+    font-weight:600;
+
 }
 
-.login-box input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid var(--border);
-    border-radius: 25px;
-    outline: none;
-    transition: 0.3s;
+/* INPUT */
+
+.login-box input{
+
+    width:100%;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    border:1px solid var(--border);
+
+    outline:none;
+
+    transition:0.3s;
+
 }
 
-/* EFECTO AL ESCRIBIR 🔥 */
-.login-box input:focus {
-    border-color: var(--primary);
-    box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
+.login-box input:focus{
+
+    border-color:#111;
+
 }
 
 /* BOTON */
-.login-box button {
-    margin-top: 20px;
-    padding: 12px;
-    width: 70%;
-    border: none;
-    background: var(--primary);
-    color: var(--white);
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: 0.3s;
+
+.login-box button{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-top:25px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#111;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:0.3s;
+
 }
 
-/* HOVER BOTON 🔥 */
-.login-box button:hover {
-    background: #000;
-    transform: scale(1.03);
+.login-box button:hover{
+
+    background:#333;
+
 }
 
-/* TEXTO FINAL */
-.registro {
-    margin-top: 20px;
-    font-size: 13px;
+/* REGISTRO */
+
+.registro{
+
+    margin-top:20px;
+
+    text-align:center;
+
+    font-size:14px;
+
 }
 
-.registro a {
-    color: var(--secondary);
-    color: #777;
-    text-decoration: none;
-    font-weight: 600;
+.registro a{
+
+    color:#111;
+
+    text-decoration:none;
+
+    font-weight:600;
+
 }
 
-.registro a:hover {
-    color: var(--primary);
-}
+/* RESPONSIVE */
 
-a {
-    text-decoration: none; /* quita el subrayado */
-    color: inherit; /* usa el color del padre */
-}
+@media(max-width:768px){
 
-/* ========================= */
-/* RESPONSIVE MOBILE CON AYUDA DE IA */
-/* ========================= */
+    .navbar{
 
-@media (max-width: 768px) {
+        padding:20px;
 
-    /* CONTENEDOR */
-    .historial {
-        padding: 20px;
     }
 
-    h2 {
-        font-size: 20px;
-        text-align: center;
-    }
+    .login-box{
 
-    /* FILTRO */
-    .filtro-grid {
-        flex-direction: column;
-        gap: 15px;
-    }
+        padding:25px;
 
-    /* CARDS */
-    .compra-body {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .precio {
-        align-self: flex-end;
-        font-size: 16px;
-    }
-
-    /* TEXTO */
-    .info p {
-        font-size: 13px;
-    }
-
-    .sub {
-        font-size: 12px;
-    }
-
-    /* CARDS MÁS COMPACTAS */
-    .compra-card {
-        padding: 15px;
     }
 
 }

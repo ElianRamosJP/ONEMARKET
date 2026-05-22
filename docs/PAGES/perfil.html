@@ -1,60 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PERFIL</title>
-    <!--LINK DE STILOS-->
-    <link rel="stylesheet" href="../STYLES/estilopl.css">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Perfil | ONEMARKET
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+    href="../STYLES/estilopl.css">
+
 </head>
+
 <body>
 
-    <!--NAVBAR-->
+    <!-- NAVBAR -->
+    <header class="navbar">
 
-   <header class="navbar">
-      <div class="logo">ONEMARKET </div> 
-    </header>
-       
+        <div
+        class="logo"
+        onclick="window.location.href='../index.html'">
+
+            ONEMARKET
+
+        </div>
+
     </header>
 
+    <!-- PERFIL -->
     <section class="perfil">
 
         <div class="perfil-box">
 
-          <h3>Perfil</h3>
+            <h3>
+                Perfil
+            </h3>
 
+            <!-- HEADER -->
             <div class="perfil-header">
 
                 <div class="avatar">
-                   👤
+
+                    👤
+
                 </div>
 
                 <div class="info">
-                  <h2>USER13</h2>
-                  <p>Miembro desde 10 DE MARZO 2026</p>
+
+                    <h2 id="nombreUsuario">
+
+                        USER
+
+                    </h2>
+
+                    <p id="fecha">
+
+                        Miembro de ONEMARKET
+
+                    </p>
+
                 </div>
 
             </div>
 
             <hr>
 
+            <!-- DATOS -->
             <div class="datos">
-              <p>USER13@example.com</p>
-              <p>+57 612 345 678</p>
-              <p>Calle 123 #28013</p>
+
+                <p id="email"></p>
+
+                <p id="telefono"></p>
+
+                <p id="direccion"></p>
+
+                <p id="rol"></p>
+
             </div>
 
-            <button class="btn-logout" onclick="window.location.href=''">Cerrar sesión</button>
+            <!-- BOTON ADMIN -->
+            <button
+            id="adminBtn"
+            class="btn-secundario"
+            style="display:none"
+            onclick="window.location.href='../PAGES/admin.html'">
 
-            <button class="btn-secundario" onclick="window.location.href='../PAGES/carrito.html'">Mi carrito</button>
+                Panel Administrador
 
-            <button class="btn-secundario" onclick="window.location.href='../PAGES/mispedidos.html'">Mis pedidos</button>
+            </button>
+
+            <!-- BOTON LOGOUT -->
+            <button
+            class="btn-logout"
+            onclick="cerrarSesion()">
+
+                Cerrar sesión
+
+            </button>
+
+            <!-- BOTONES -->
+            <button
+            class="btn-secundario"
+            onclick="window.location.href='../PAGES/carrito.html'">
+
+                Mi carrito
+
+            </button>
+
+            <button
+            class="btn-secundario"
+            onclick="window.location.href='../PAGES/mispedidos.html'">
+
+                Mis pedidos
+
+            </button>
 
         </div>
 
     </section>
 
+    <!-- JS -->
+    <script src="../SCRIPTS/perfil.js"></script>
 
-    
 </body>
+
 </html>

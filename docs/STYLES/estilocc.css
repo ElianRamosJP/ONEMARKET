@@ -1,178 +1,255 @@
-:root {
-    --primary: #111;
-    --secondary: #6b6b6b;
-    --bg: #f7f7f7;
-    --white: #ffffff;
-    --border: #eaeaea;
+:root{
+
+    --primary:#111;
+    --secondary:#777;
+    --bg:#f7f7f7;
+    --white:#fff;
+    --border:#eaeaea;
+
+    --shadow:
+    0 10px 25px rgba(0,0,0,0.08);
+
 }
 
 /* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-/* BODY */
-body {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: var(--bg);
-    color: var(--primary);
+body{
+
+    font-family:'Segoe UI', sans-serif;
+
+    background:var(--bg);
+
+    color:var(--primary);
+
 }
 
 /* NAVBAR */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 60px;
-    background: var(--white);
-    border-bottom: 1px solid var(--border);
+
+.navbar{
+
+    padding:20px 60px;
+
+    background:white;
+
+    border-bottom:1px solid var(--border);
+
 }
 
-.logo {
-    font-weight: 700;
-    letter-spacing: 1px;
+.logo{
+
+    font-size:22px;
+    font-weight:700;
+
 }
 
+/* REGISTRO */
 
-.registro {
-    padding: 50px 20px;
-    text-align: center;
+.registro{
+
+    padding:50px 20px;
+
 }
 
-/* HEADER */
-.registro-header h2 {
-    font-size: 22px;
+.registro-header{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
 }
 
-.registro-header p {
-    font-size: 13px;
-    color: #777;
+.registro-header h2{
+
+    font-size:32px;
+
+    margin-bottom:10px;
+
 }
 
-/* CAJA */
-.registro-box {
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 30px;
-    border: 2px solid #000;
-    border-radius: 15px;
-    text-align: left;
-    background: #fff;
+.registro-header p{
+
+    color:var(--secondary);
+
 }
 
-/* TITULOS */
-.registro-box h3 {
-    margin-bottom: 5px;
+/* FORM */
+
+.registro-box{
+
+    max-width:700px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    box-shadow:var(--shadow);
+
 }
 
-.registro-box .sub {
-    font-size: 12px;
-    color: #777;
-    margin-bottom: 20px;
+.registro-box h3{
+
+    margin-bottom:5px;
+
 }
 
-.registro-box h4 {
-    margin: 20px 0 10px;
+.sub{
+
+    color:var(--secondary);
+
+    margin-bottom:25px;
+
+    font-size:14px;
+
+}
+
+.registro-box h4{
+
+    margin:25px 0 15px;
+
 }
 
 /* GRID */
-.grid-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
+
+.grid-2{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
 }
 
-.grid-1 {
-    margin-top: 10px;
+.grid-1{
+
+    margin-top:20px;
+
 }
 
-/* INPUTS */
-label {
-    display: block;
-    font-size: 12px;
-    font-weight: bold;
-    margin-bottom: 5px;
+/* LABEL */
+
+label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:14px;
+
+    font-weight:600;
+
 }
 
-input {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #000;
-    border-radius: 20px;
-    outline: none;
+/* INPUT */
+
+input{
+
+    width:100%;
+
+    padding:13px 15px;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    outline:none;
+
+    transition:0.3s;
+
+}
+
+input:focus{
+
+    border-color:#111;
+
+    box-shadow:0 0 0 3px rgba(0,0,0,0.08);
+
 }
 
 /* BOTON */
-.btn-registro {
-    margin: 25px auto 10px;
-    display: block;
-    width: 50%;
-    padding: 10px;
-    border: 1px solid #000;
-    background: #f5f5f5;
-    border-radius: 8px;
-    cursor: pointer;
+
+.btn-registro{
+
+    width:100%;
+
+    margin-top:30px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#111;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:0.3s;
+
 }
 
-/* LINK FINAL */
-.login-link {
-    text-align: center;
-    font-size: 13px;
+.btn-registro:hover{
+
+    background:#333;
+
 }
 
-.login-link a {
-    color: #777;
-    text-decoration: none;
-    font-weight: bold;
+/* LOGIN LINK */
+
+.login-link{
+
+    margin-top:20px;
+
+    text-align:center;
+
+    font-size:14px;
+
 }
 
-/* ========================= */
-/* RESPONSIVE MOBILE CON AYUDA DE IA */
-/* ========================= */
+.login-link a{
 
-@media (max-width: 768px) {
+    text-decoration:none;
 
-    /* CONTENEDOR */
-    .historial {
-        padding: 20px;
+    color:#111;
+
+    font-weight:600;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .navbar{
+
+        padding:20px;
+
     }
 
-    h2 {
-        font-size: 20px;
-        text-align: center;
+    .registro-box{
+
+        padding:25px;
+
     }
 
-    /* FILTRO */
-    .filtro-grid {
-        flex-direction: column;
-        gap: 15px;
-    }
+    .grid-2{
 
-    /* CARDS */
-    .compra-body {
-        flex-direction: column;
-        gap: 10px;
-    }
+        grid-template-columns:1fr;
 
-    .precio {
-        align-self: flex-end;
-        font-size: 16px;
-    }
-
-    /* TEXTO */
-    .info p {
-        font-size: 13px;
-    }
-
-    .sub {
-        font-size: 12px;
-    }
-
-    /* CARDS MÁS COMPACTAS */
-    .compra-card {
-        padding: 15px;
     }
 
 }

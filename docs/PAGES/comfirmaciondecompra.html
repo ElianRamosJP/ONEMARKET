@@ -1,47 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
     <title>Compra Exitosa</title>
-    <link rel="stylesheet" href="../STYLES/estilocomfirmacion.css">
+
+    <link rel="stylesheet"
+    href="../STYLES/estilocomfirmacion.css">
+
 </head>
 
 <body>
+
     <!-- NAVBAR -->
     <header class="navbar">
-       <a class="footer-logo">ONEMARKET</a>
+
+        <h2 class="logo">
+            ONEMARKET
+        </h2>
+
     </header>
 
+    <!-- CONFIRMACION -->
     <section class="confirmacion">
 
-      <!-- ICONO -->
-      <div class="icono">✔</div>
+        <!-- ICONO -->
+        <div class="icono">
+            ✔
+        </div>
 
-       <!-- TITULO -->
-      <h1>¡Compra Exitosa!</h1>
+        <!-- TITULO -->
+        <h1>
+            ¡Compra Exitosa!
+        </h1>
 
         <p class="mensaje">
-           Tu pedido ha sido confirmado y está siendo procesado
+
+            Tu pedido ha sido confirmado
+            y está siendo procesado.
+
         </p>
 
-      <!-- DETALLES -->
+        <!-- DETALLES -->
         <div class="detalle-box">
 
-          <h3>Detalles del Pedido</h3>
+            <h3>
+                Detalles del Pedido
+            </h3>
 
-          <p><strong>ID del Pedido:</strong></p>
-          <p><strong>Fecha:</strong></p>
-          <p><strong>Total Pagado:</strong></p>
+            <p>
+
+                <strong>ID del Pedido:</strong>
+
+                <span id="pedido-id"></span>
+
+            </p>
+
+            <p>
+
+                <strong>Fecha:</strong>
+
+                <span id="fecha"></span>
+
+            </p>
+
+            <p>
+
+                <strong>Total Pagado:</strong>
+
+                <span id="total"></span>
+
+            </p>
 
         </div>
 
         <!-- BOTONES -->
-       <button class="btn-principal" onclick="window.location.href='../PAGES/mispedidos.html'">Ver mis pedidos</button>
+        <button
+        class="btn-principal"
+        onclick="window.location.href='../PAGES/mispedidos.html'">
 
-       <button class="btn-secundario" onclick="window.location.href='../index.html'">Volver al inicio</button>
+            Ver mis pedidos
+
+        </button>
+
+        <button
+        class="btn-secundario"
+        onclick="window.location.href='../index.html'">
+
+            Volver al inicio
+
+        </button>
 
     </section>
 
+    <!-- JS -->
+    <script src="../SCRIPTS/comfirmaciondecompra.js"></script>
+
 </body>
+
 </html>
